@@ -231,3 +231,32 @@ section.call-to-action button {
   border: 1px solid #000;
   font-size: 1rem;
 }
+
+section.main {
+  display: flex;
+  height: auto;
+  width: 92%;
+  padding: 15px 20px 40px 0;
+  margin-left: 4%;
+  flex-wrap: wrap;
+  border-top: 2px solid #000;
+}
+
+section.last {
+  border-top: none;
+  border-bottom: 2px solid #000;
+}
+
+.middle-img {
+  width: 92%;
+  margin-left: 4%;
+}
+
+section.main article {
+  margin-top: 45px;
+  line-height: 1.15rem;
+}
+
+article.thirds:first-child {
+  margin-top: 15px;
+}
