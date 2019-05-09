@@ -203,15 +203,31 @@ header nav a:last-child {
 }
 
 section.call-to-action {
+  height: 400px;
+}
+
+section.call-to-action div {
   display: flex;
   width: 100%;
-  height: auto;
-  background: rgba(0, 0, 0, 0.2);
-  justify-content: center;
+  padding-bottom: 75px;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.call-to-action .cta-snippet-img {
+  display: none;
 }
 
 section.call-to-action h1 {
   font-size: 4.5rem;
+  padding: 50px 0 10px;
+  width: 100%;
   text-align: center;
-  padding: 50px 0;
+}
+
+section.call-to-action button {
+  padding: 6px 42px;
+  background: none;
+  border: 1px solid #000;
+  font-size: 1rem;
 }
