@@ -260,3 +260,20 @@ section.main article {
 article.thirds:first-child {
   margin-top: 15px;
 }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 92%;
+  margin-left: 4%;
+  padding: 20px 0 50px;
+}
+
+footer p {
+  margin-top: 15px;
+}
+
+copyright {
+  padding-top: 50px;
+  text-align: center;
+}
