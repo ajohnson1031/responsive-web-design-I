@@ -335,6 +335,7 @@ copyright {
   .container {
     max-width: 1024px;
     margin: 0 auto;
+    padding: 0 45px;
   }
   header {
     flex-direction: row;
@@ -343,13 +344,39 @@ copyright {
   }
 
   header nav {
-    justify-content: space-around;
+    justify-content: space-between;
     width: calc(90% - 183px);
     order: 0;
     flex-wrap: nowrap;
   }
 
   header .logo {
-    margin: 15px 40px 0 0;
+    margin-top: 15px;
+  }
+
+  section.call-to-action {
+    display: flex;
+    flex-direction: row;
+    margin: 50px 0;
+  }
+
+  section.call-to-action div:first-child {
+    padding-left: 45px;
+  }
+
+  section.call-to-action div,
+  section.call-to-action div.cta-snippet-img {
+    display: flex;
+    width: 50%;
+    height: 100%;
+  }
+
+  div.cta-snippet-img {
+    background: url("../img/header-img.png") no-repeat;
+  }
+
+  .middle-img {
+    width: 93%;
+    margin: 0 3.5%;
   }
 }
