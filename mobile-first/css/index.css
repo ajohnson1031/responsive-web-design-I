@@ -158,3 +158,46 @@ h5 {
   letter-spacing: 1px;
   margin-bottom: 15px;
 }
+
+/* Start of Custom Code */
+
+div.container {
+  width: 100%;
+  height: auto;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+header .logo {
+  width: 183px;
+  height: 36px;
+  background: url("../img/logo.png");
+  order: 0;
+}
+
+header nav {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  order: 1;
+  margin-top: 20px;
+}
+
+header nav a {
+  width: 100%;
+  font-size: 1.3rem;
+  padding: 20px 0;
+  border-top: 1px solid #000;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+}
+
+header nav a:last-child {
+  border-bottom: 1px solid #000;
+}
