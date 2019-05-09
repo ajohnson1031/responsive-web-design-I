@@ -277,3 +277,56 @@ copyright {
   padding-top: 50px;
   text-align: center;
 }
+
+@media (min-width: 500px) {
+  header {
+    margin-top: 30px;
+    padding: 0 30px;
+  }
+
+  header nav {
+    justify-content: space-between;
+  }
+
+  header nav a,
+  header nav a:last-child {
+    width: auto;
+    text-decoration: none;
+    font-size: 1rem;
+    border: none;
+  }
+
+  section.main {
+    display: flex;
+    height: auto;
+    width: 95%;
+    padding: 0 10px 40px;
+    margin: 0 2.5%;
+    flex-wrap: wrap;
+    border-top: 2px solid #000;
+    justify-content: space-between;
+  }
+
+  section.main.last {
+    border-top: none;
+  }
+
+  section.main article,
+  article.thirds:first-child {
+    margin-top: 35px;
+    line-height: 1.15rem;
+  }
+
+  .half {
+    width: 48%;
+  }
+
+  .thirds {
+    width: 30%;
+  }
+
+  .middle-img {
+    width: 95%;
+    margin: 0 2.5%;
+  }
+}
