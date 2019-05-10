@@ -1,3 +1,469 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  z-index: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+h1 {
+  font-size: 4.5rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin-top: 40px;
+}
+
+p {
+  /*font-family: 'Open Sans', sans-serif;*/
+  line-height: 1.25rem;
+}
+
+section {
+  display: flex;
+  padding-top: 40px;
+}
+
+section.last {
+  padding-bottom: 40px;
+}
+
+button {
+  width: 175px;
+  height: 35px;
+  background: none;
+  border: 1px solid black;
+  outline: none;
+  font-size: 17px;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.container {
+  max-width: 1024px;
+  height: auto;
+  padding: 40px 75px 110px;
+  margin: 0 auto;
+}
+
+header {
+  width: calc(1024px - 150px);
+  display: flex;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  padding: 30px 0;
+  z-index: 1;
+  justify-content: space-between;
+}
+
+header nav {
+  margin-top: 10px;
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+}
+
+header nav a {
+  font-size: 14px;
+  color: #aaa;
+  text-decoration: none;
+  padding: 5px;
+  transition-duration: 0.4s;
+}
+
+header nav a:hover {
+  color: #000;
+  background-color: #e5e5e5;
+  border-bottom: 1px solid #aaa;
+}
+
+header .logo {
+  width: 183px;
+  height: 36px;
+  background-image: url(../img/logo.png);
+  align-items: flex-end;
+}
+
+.call-to-action {
+  height: 455px;
+  margin-top: 70px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid black;
+}
+
+.call-to-action div {
+  width: 49.5%;
+  text-align: center;
+  padding: 65px 0 0 0;
+  vertical-align: top;
+}
+
+.cta-snippet-img {
+  height: 380px;
+  background: url("../img/header-img.png") no-repeat;
+  background-position: 50px 0;
+}
+
+.middle-img {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.half {
+  width: calc(50% - 2px);
+  padding-right: 15px;
+}
+
+.thirds {
+  width: 33%;
+  padding-right: 15px;
+}
+
+footer {
+  padding-top: 40px;
+  flex-direction: column;
+  border-top: 1px solid black;
+}
+
+footer p {
+  padding-top: 25px;
+}
+
+copyright {
+  display: block;
+  text-align: center;
+  margin-top: 60px;
+  font-size: small;
+}
+
+/*_______________________________
+       Services Page Styles
+________________________________*/
+
+.services-description {
+  flex-direction: column;
+  padding-bottom: 40px;
+  border-bottom: 1px solid black;
+  margin-top: 20px;
+}
+
+.services-header-img {
+  width: 880px;
+  height: 200px;
+  background: url(../img/services-header.jpg) no-repeat;
+}
+
+.services-list {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.service {
+  width: 420px;
+  box-sizing: border-box;
+  padding: 24px;
+  background-color: #f4f3f4;
+  border: 1px solid black;
+  margin-bottom: 40px;
+}
+
+.service button {
+  border-radius: 6px;
+  background: #fff;
+  font-family: "Helvetica", sans-serif;
+  font-size: 12px;
+  width: 143px;
+  margin-top: 25px;
+}
+
+.services-footer h4 {
+  margin: 0;
+}
+
+.services-footer ul {
+  margin: 20px;
+}
+
+.services-footer ul li {
+  list-style: square;
+  line-height: 2rem;
+}
+
+/* Tablet View */
+@media (max-width: 800px) {
+  .container {
+    width: 100%;
+    padding: 20px 20px 50px;
+  }
+
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: calc(100% - 40px);
+  }
+
+  header nav {
+    width: 100%;
+    order: 1;
+    padding: 0 20px;
+    margin-top: 35px;
+    justify-content: space-between;
+  }
+
+  header .logo {
+    order: 0;
+  }
+
+  .call-to-action div {
+    width: 100%;
+  }
+
+  .call-to-action button {
+    margin-top: 10px;
+  }
+
+  .cta-snippet-img {
+    display: none;
+  }
+
+  .main {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 15px;
+  }
+
+  .middle-img {
+    margin: 0;
+  }
+
+  .half {
+    width: 48%;
+    padding: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 0 15px 50px;
+  }
+
+  header {
+    width: 100%;
+    background: none;
+    align-items: center;
+    padding: 20px 0 0 0;
+    position: relative;
+  }
+
+  header nav {
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  header nav a {
+    font-size: 1.3rem;
+    padding: 20px 0;
+    border-top: 1px solid #000;
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav a:hover {
+    background: none;
+    text-decoration: none;
+  }
+
+  header nav a:last-child {
+    border-bottom: 1px solid #000;
+  }
+
+  .call-to-action {
+    margin: 0 auto;
+    height: auto;
+    width: 100%;
+    padding: 55px 0 65px;
+    border-bottom: 2px solid #000;
+  }
+
+  .call-to-action div {
+    padding-top: 0;
+    margin: 0;
+  }
+
+  .main {
+    flex-wrap: wrap;
+    padding: 40px 0;
+  }
+
+  .half,
+  .thirds {
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  footer {
+    border-top: 2px solid #000;
+  }
+}
+
+/* End Custom CSS */
